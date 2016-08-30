@@ -64,7 +64,7 @@ gulp.task('pugcompile', function buildHTML() {
  * Watch site files reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('_sass/*.sass', ['sass']);
+    gulp.watch('_sass/**/*.sass', ['sass']);
     gulp.watch('_js/*.js', ['concatenate']);
     gulp.watch('_pug/**/*.pug', ['pugcompile']);
     gulp.watch(['site/*'], ['reload-browser']);
