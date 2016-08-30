@@ -1,0 +1,39 @@
+.container-burger
+  display: flex
+  align-items: center
+  position: absolute
+  top: 20px
+  right: 20px
+  width: 50px
+  height: 50px
+  border: 2px solid rgba(0, 0, 0, 0.01)
+  border-radius: 0
+  transition: all 300ms ease-in-out
+  .burger-line,
+  .burger-line:before,
+  .burger-line:after
+    transition: all 300ms ease-in-out
+    content: ""
+    width: 100%
+    height: 2px
+    display: block
+    background: black
+    position: relative
+  .burger-line:before
+    top: 15px
+  .burger-line:after
+    top: -17px
+
+  &.is-open
+    border: 2px solid rgba(0, 0, 0, 1)
+    border-radius: 50%
+    .burger-line
+      background: transparent
+    .burger-line:before,
+    .burger-line:after
+      top: 0
+      transform-origin: center
+    .burger-line:before
+      transform: rotate(45deg)
+    .burger-line:after
+      transform: rotate(-45deg)

@@ -24,7 +24,7 @@ gulp.task('reload-browser', function () {
  * Concatenate js files
  */
 gulp.task('concatenate', function() {
-  return gulp.src(['_js/jquery-3.1.0.min.js', '_js/mine.js'])
+  return gulp.src(['_js/jquery-3.1.0.min.js', '_js/mine.js', '_js/mobile-burger-menu.js'])
     .pipe(concat('main.js'))
     .pipe(gulp.dest('site'));
 });
@@ -66,7 +66,7 @@ gulp.task('pugcompile', function buildHTML() {
 gulp.task('watch', function () {
     gulp.watch('_sass/*.sass', ['sass']);
     gulp.watch('_js/*.js', ['concatenate']);
-    gulp.watch('_pug/*.pug', ['pugcompile']);
+    gulp.watch('_pug/**/*.pug', ['pugcompile']);
     gulp.watch(['site/*'], ['reload-browser']);
 });
 
