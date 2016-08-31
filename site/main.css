@@ -423,7 +423,7 @@ header.home {
     text-align: center;
     padding: 5px; }
     header.home .dropdown-button:hover {
-      border-color: #e040fb;
+      border-color: #536dfe;
       background-color: #455a64;
       -webkit-transform: scale(1.1);
           -ms-transform: scale(1.1);
@@ -472,6 +472,12 @@ footer.home {
           box-shadow: 0px -5px 5px grey; }
 
 .home-content-wraper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 997px;
+  border: 3px solid black;
   height: 100vh; }
 
 .container-burger {
