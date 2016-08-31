@@ -413,6 +413,30 @@ header.home {
       header.home .menu-items-wraper ul li {
         text-align: center;
         font-size: 30px; }
+  header.home .dropdown-button {
+    display: none; }
+
+@media (min-width: 775px) {
+  header.home {
+    height: 100px; }
+    header.home .dropdown-button {
+      display: block; }
+    header.home .container-burger {
+      display: none; }
+    header.home .menu-items-wraper {
+      background: white;
+      -webkit-box-shadow: -5px 5px 5px grey;
+              box-shadow: -5px 5px 5px grey;
+      display: none;
+      margin: 0;
+      overflow: show;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      top: 100px;
+      width: 250px; }
+      header.home .menu-items-wraper ul li {
+        font-size: 20px; } }
 
 footer.home {
   display: -webkit-box;

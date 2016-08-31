@@ -7,9 +7,14 @@ if(e&&1===a.nodeType)while(c=e[d++])a.removeAttribute(c)}}),hb={set:function(a,b
 $(document).ready(function() {
   $('.container-burger').click(function(){
     $(this).toggleClass('is-open');
-
     $('.menu-items-wraper').slideToggle('fast');
     $('.menu-items-wraper').toggleClass('is-expanded');
+
+  });
+  $('.dropdown-button').click(function(){
+    $(this).toggleClass('is-open');
+    $('.menu-items-wraper').slideToggle('fast');
+    //$('.menu-items-wraper').toggleClass('is-expanded');
 
   });
 });
