@@ -416,7 +416,11 @@ header.home {
       list-style-type: none; }
       header.home .menu-items-wraper ul li {
         text-align: center;
-        font-size: 30px; }
+        font-size: 30px;
+        padding: 10px; }
+    header.home .menu-items-wraper a {
+      text-decoration: none;
+      color: #cfd8dc; }
 
 @media (min-width: 966px) {
   header.home {
@@ -512,7 +516,8 @@ footer.home {
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
   .home-content-wraper .intro {
-    background-image: url(https://d13yacurqjgara.cloudfront.net/users/52758/screenshots/2919566/st_john_usvi_fish.jpg); }
+    background-image: url(https://d13yacurqjgara.cloudfront.net/users/52758/screenshots/2919566/st_john_usvi_fish.jpg);
+    color: #3e2723; }
     .home-content-wraper .intro .thumbnail-wraper {
       position: relative;
       margin-left: auto;
@@ -520,6 +525,7 @@ footer.home {
   .home-content-wraper .references {
     background-image: url(https://d13yacurqjgara.cloudfront.net/users/40433/screenshots/2917699/untitled-1.png); }
   .home-content-wraper .whatyoudget {
+    color: black;
     background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2914297/dribbble_acorn.png); }
   .home-content-wraper .thumbnail {
     position: relative;
@@ -536,9 +542,9 @@ footer.home {
     background-position: top;
     background-size: cover; }
     .home-content-wraper .thumbnail.gulp {
-      background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2916809/dribbble_lemon.png); }
+      background-image: url(img/gulp-logo.jpg); }
     .home-content-wraper .thumbnail.sass {
-      background-image: url(https://d13yacurqjgara.cloudfront.net/users/40433/screenshots/2920159/untitled-1.png); }
+      background-image: url(img/color-1c4aab2b.png); }
     .home-content-wraper .thumbnail.jade {
       background-image: url(https://d13yacurqjgara.cloudfront.net/users/40433/screenshots/2917699/untitled-1.png); }
     .home-content-wraper .thumbnail.broesersync {
