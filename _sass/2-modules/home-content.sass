@@ -1,7 +1,7 @@
 .home-content-wraper
   margin: 50px auto
   background: #fff
-  max-width: 700px
+  max-width: 947px
   box-shadow: 0px 25px 30px -20px rgba(0,0,0,0.2)
   box-sizing: border-box
 
@@ -20,24 +20,29 @@
     background:
       position: top
       size: cover
-  h1
-    text-align: center
-    position: absolute
-    top: 50%
-    left: 50%
-    margin: 0
-    transform: translate(-50%, -50%)
+
   .hero
     position: relative
     background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2921840/dribbble_stickermule.png)
+    h1
+      text-align: center
+      position: absolute
+      top: 50%
+      left: 50%
+      margin: 0
+      transform: translate(-50%, -50%)
 
-  .omage
+  .intro
     background-image: url(https://d13yacurqjgara.cloudfront.net/users/52758/screenshots/2919566/st_john_usvi_fish.jpg)
+    .thumbnail-wraper
+      position: relative
+      margin-left: auto
+      margin-right: auto
 
   .references
     background-image: url(https://d13yacurqjgara.cloudfront.net/users/40433/screenshots/2917699/untitled-1.png)
 
-  .whatyouget
+  .whatyoudget
     background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2914297/dribbble_acorn.png)
 
   .thumbnail
@@ -54,18 +59,20 @@
       position: top
       size: cover
 
-  .gulp
-    .thumbnail
+    &.gulp
       background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2916809/dribbble_lemon.png)
 
-  .sass
-    .thumbnail
+    &.sass
       background-image: url(https://d13yacurqjgara.cloudfront.net/users/40433/screenshots/2920159/untitled-1.png)
 
-  .jade
-    .thumbnail
+    &.jade
       background-image: url(https://d13yacurqjgara.cloudfront.net/users/40433/screenshots/2917699/untitled-1.png)
 
-  .broesersync
-    .thumbnail
+    &.broesersync
       background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2915065/dribbble_soda.png)
+
+    &.starterkit
+      background-image: url(https://d13yacurqjgara.cloudfront.net/users/299/screenshots/2917854/fizzy-shades.png)
+
+    &.gulpgrunt
+      background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2920459/dribbble_pill.png)
