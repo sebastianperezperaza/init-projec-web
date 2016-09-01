@@ -16,14 +16,15 @@
     box-sizing: border-box
     margin-bottom: 10px
     border-radius: 4px
-    color: white
+    color: $brown-900
+    font-size: 20px
     background:
       position: top
       size: cover
 
   .hero
     position: relative
-    background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2921840/dribbble_stickermule.png)
+    background-image: url(img/dribbble_fire.png)
     h1
       text-align: center
       position: absolute
@@ -31,28 +32,25 @@
       left: 50%
       margin: 0
       transform: translate(-50%, -50%)
-
   .intro
-    background-image: url(https://d13yacurqjgara.cloudfront.net/users/52758/screenshots/2919566/st_john_usvi_fish.jpg)
-    color: $brown-900
-    .thumbnail-wraper
-      position: relative
-      margin-left: auto
-      margin-right: auto
-
+    background-image: url(img/dribbble_bandaid.png)
   .references
-    background-image: url(https://d13yacurqjgara.cloudfront.net/users/40433/screenshots/2917699/untitled-1.png)
+    background-image: url(img/dribbble_acorn.png)
+  .avatar
+    height: 50px
+    width: 50px
+    border-radius: 50%
+    position: center
+    size: contain
 
   .whatyoudget
-    color: black
-    background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2914297/dribbble_acorn.png)
-
+    background-image: url(img/dribbble_mug.png)
   .thumbnail
     position: relative
     margin-left: auto
     margin-right: auto
-    height: 100px
-    width: 160px
+    height: 150px
+    width: 220px
     padding: 20px
     box-sizing: border-box
     margin-bottom: 10px
@@ -62,19 +60,38 @@
       size: cover
 
     &.gulp
-      background-image: url(img/gulp-logo.jpg)
-
+      background-image: url(img/buildsystem.jpg)
     &.sass
-      background-image: url(img/color-1c4aab2b.png)
-
+      background-image: url(img/sasstut.jpg)
     &.jade
-      background-image: url(https://d13yacurqjgara.cloudfront.net/users/40433/screenshots/2917699/untitled-1.png)
-
+      background-image: url(img/jadebro.jpg)
     &.broesersync
-      background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2915065/dribbble_soda.png)
-
+      background-image: url(img/sasstut.jpg)
     &.starterkit
-      background-image: url(https://d13yacurqjgara.cloudfront.net/users/299/screenshots/2917854/fizzy-shades.png)
+      background-image: url(img/StarterKit.jpg)
 
-    &.gulpgrunt
-      background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2920459/dribbble_pill.png)
+
+.contributor
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  border-bottom: 1px solid grey
+  width: 600px
+  h4
+    margin: 0
+  .avatar
+    img
+      margin: 20px
+      height: 50px
+      width: auto
+      border-radius: 50%
+      position: center
+      size: contain
+      display: block
+  .statement
+    p.detail
+      padding: 0
+      margin: 0
+      color: $grey-700
+      font-size: 15px
+      font-style: italic
