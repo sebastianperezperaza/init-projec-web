@@ -417,39 +417,42 @@ header.home {
       header.home .menu-items-wraper ul li {
         text-align: center;
         font-size: 30px; }
-  header.home .dropdown-button {
-    display: none;
-    width: 100px;
-    border: 3px solid #cfd8dc;
-    text-align: center;
-    padding: 5px; }
-    header.home .dropdown-button:hover {
-      border-color: #536dfe;
-      background-color: #455a64;
-      -webkit-transform: scale(1.1);
-          -ms-transform: scale(1.1);
-              transform: scale(1.1); }
 
-@media (min-width: 775px) {
+@media (min-width: 966px) {
   header.home {
     height: 100px; }
-    header.home .dropdown-button {
-      display: block; }
     header.home .container-burger {
       display: none; }
+    header.home .menu-header-wraper {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
     header.home .menu-items-wraper {
       -webkit-box-shadow: -5px 5px 5px grey;
               box-shadow: -5px 5px 5px grey;
-      display: none;
+      display: block;
       margin: 0;
       overflow: show;
       padding: 0;
       position: absolute;
       right: 0;
       top: 100px;
-      width: 250px; }
-      header.home .menu-items-wraper ul li {
-        font-size: 20px; } }
+      width: 100%; }
+      header.home .menu-items-wraper ul {
+        margin: 0 auto;
+        width: 966px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        header.home .menu-items-wraper ul li {
+          font-size: 20px;
+          display: inline; } }
 
 footer.home {
   background-color: #607d8b;
@@ -467,15 +470,14 @@ footer.home {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
   -webkit-box-shadow: 0px -5px 5px grey;
           box-shadow: 0px -5px 5px grey; }
 
 .home-content-wraper {
   margin: 50px auto;
   background: #fff;
-  max-width: 947px;
+  max-width: 966px;
   -webkit-box-shadow: 0px 25px 30px -20px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 25px 30px -20px rgba(0, 0, 0, 0.2);
   -webkit-box-sizing: border-box;

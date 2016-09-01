@@ -2,13 +2,18 @@ $(document).ready(function() {
   $('.container-burger').click(function(){
     $(this).toggleClass('is-open');
     $('.menu-items-wraper').slideToggle('fast');
-    $('.menu-items-wraper').toggleClass('is-expanded');
 
   });
-  $('.dropdown-button').click(function(){
-    $(this).toggleClass('is-open');
-    $('.menu-items-wraper').slideToggle('fast');
-    //$('.menu-items-wraper').toggleClass('is-expanded');
+  $(window).on('resize orientationChange', function(event){
+    var width = $(window).width();
+
+    $('.container-burger').removeClass('is-open');
+    if (width > 947) {
+        $('.menu-items-wraper').show();
+    }
+    else{
+        $('.menu-items-wraper').hide();
+    }
 
   });
 });

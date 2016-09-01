@@ -24,37 +24,29 @@ header.home
       li
         text-align: center
         font-size: 30px
-  .dropdown-button
-    display: none
-    width: 100px
-    border: 3px solid $primary-bacground-color-light
-    text-align: center
-    padding: 5px
-    //border-radius: 50%
-    &:hover
-      border-color: $primari-accent-color
-      background-color: $primary-bacground-color-dark
-      transform: scale(1.1)
 
-
-@media (min-width: 775px)
+@media (min-width: $media-break-point)
   header.home
     height: 100px
-    .dropdown-button
-      display: block
     .container-burger
       display: none
+    .menu-header-wraper
+      justify-content: center
     .menu-items-wraper
-
       box-shadow: -5px 5px 5px grey
-      display: none
+      display: block
       margin: 0
       overflow: show
       padding: 0
       position: absolute
       right: 0
       top: 100px
-      width: 250px
+      width: 100%
       ul
+        margin: 0 auto
+        width: $media-break-point
+        display: flex
+        justify-content: space-between
         li
           font-size: 20px
+          display: inline
