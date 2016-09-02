@@ -529,6 +529,8 @@ footer.home {
     size: contain; }
   .home-content-wraper .whatyoudget {
     background-image: url(img/dribbble_mug.png); }
+  .home-content-wraper a.thumbnail {
+    display: block; }
   .home-content-wraper .thumbnail {
     position: relative;
     margin-left: auto;
@@ -555,6 +557,10 @@ footer.home {
       background-image: url(img/StarterKit.jpg); }
 
 .contributor {
+  position: relative;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -564,29 +570,31 @@ footer.home {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   border-bottom: 1px solid grey;
-  width: 600px; }
-  .contributor h4 {
-    margin: 0; }
-  .contributor .avatar img {
-    margin: 20px;
-    height: 50px;
-    width: auto;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    position: center;
-    size: contain;
-    display: block; }
-  .contributor .statement p.detail {
-    padding: 0;
-    margin: 0;
-    color: #616161;
-    font-size: 15px;
-    font-style: italic; }
+  width: 400px; }
+  .contributor .avatar {
+    margin: 5px; }
+    .contributor .avatar img {
+      height: 50px;
+      width: 50px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      size: contain; }
+  .contributor .statement {
+    margin: 5px; }
+    .contributor .statement h4 {
+      margin: 0; }
+    .contributor .statement p {
+      font-size: 17px; }
+    .contributor .statement p.detail {
+      padding: 0;
+      margin: 0;
+      color: #616161;
+      font-size: 15px;
+      font-style: italic; }
 
 .container-burger {
   display: -webkit-box;
