@@ -1,4 +1,5 @@
 footer.home
+  position: relative
   background-color: $primary-bacground-color
   color: $grey-200
   display: flex
@@ -10,4 +11,53 @@ footer.home
     height: 100px
     width: 100px
     border-radius: 50%
-    //size: cover
+  .media
+
+    margin-top: 20px
+    img
+      height: 30px
+      width: 30px
+      padding: 10px
+
+  .bulb
+    background: transparentize($pink-300, 0.5)
+    display: none
+    width: 300px
+    border-radius: 4px
+    position: absolute
+    bottom: 80%
+    left: 50%
+    padding: 0px 10px
+    margin-bottom: 10px
+    cursor: default
+    animation: note 800ms ease-in-out forwards
+
+
+    &:after
+      top: 100%
+      left: 10%
+      border: solid transparent
+      content: " "
+      height: 0
+      width: 0
+      position: absolute
+      pointer-events: none
+      border-color: rgba(0, 151, 167, 0)
+      border-top-color: transparentize($pink-300, 0.5)
+      border-width: 10px
+
+
+@keyframes note
+  0%
+    opacity: 0
+    transform: scale(0.1) rotate(30deg) translateY(50px) rotateX(90deg)
+
+  50%
+    transform: rotate(-10deg) rotateX(-2deg)
+    opacity: 1
+  70%
+    transform: rotate(3deg)
+
+  100%
+
+    transform: scale(1)

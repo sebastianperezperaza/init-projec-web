@@ -3,6 +3,7 @@ $(document).ready(function() {
     $(this).toggleClass('is-open');
     $('.menu-items-wraper').slideToggle('fast');
   });
+
   $(window).on('resize orientationChange', function(event){
     var width = $(window).width();
     $('.container-burger').removeClass('is-open');
@@ -12,5 +13,11 @@ $(document).ready(function() {
     else{
         $('.menu-items-wraper').hide();
     }
+  });
+
+  $('.youtube').hover(function(){
+    $('.bulb').css('display','block');
+  },function(){
+    $('.bulb').css('display','none');
   });
 });

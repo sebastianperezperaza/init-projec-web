@@ -24,7 +24,7 @@ gulp.task('reload-browser', function () {
  * Concatenate js files
  */
 gulp.task('concatenate', function() {
-  return gulp.src(['_js/jquery-3.1.0.min.js', '_js/mine.js', '_js/mobile-burger-menu.js'])
+  return gulp.src(['_js/jquery-3.1.0.min.js', '_js/mine.js'])
     .pipe(concat('main.js'))
     .pipe(gulp.dest('site'));
 });
@@ -75,4 +75,4 @@ gulp.task('watch', function () {
  * Default task, running just `gulp` will compile the sass,
  * launch BrowserSync & watch files.
  */
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['browser-sync','sass', 'concatenate','pugcompile', 'watch']);

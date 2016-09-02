@@ -464,6 +464,7 @@ header.home {
           display: inline; } }
 
 footer.home {
+  position: relative;
   background-color: #607d8b;
   color: #eeeeee;
   display: -webkit-box;
@@ -487,6 +488,70 @@ footer.home {
     width: 100px;
     -webkit-border-radius: 50%;
             border-radius: 50%; }
+  footer.home .media {
+    margin-top: 20px; }
+    footer.home .media img {
+      height: 30px;
+      width: 30px;
+      padding: 10px; }
+  footer.home .bulb {
+    background: rgba(240, 98, 146, 0.5);
+    display: none;
+    width: 300px;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    position: absolute;
+    bottom: 80%;
+    left: 50%;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    cursor: default;
+    -webkit-animation: note 800ms ease-in-out forwards;
+            animation: note 800ms ease-in-out forwards; }
+    footer.home .bulb:after {
+      top: 100%;
+      left: 10%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(0, 151, 167, 0);
+      border-top-color: rgba(240, 98, 146, 0.5);
+      border-width: 10px; }
+
+@-webkit-keyframes note {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg) translateY(50px) rotateX(90deg);
+            transform: scale(0.1) rotate(30deg) translateY(50px) rotateX(90deg); }
+  50% {
+    -webkit-transform: rotate(-10deg) rotateX(-2deg);
+            transform: rotate(-10deg) rotateX(-2deg);
+    opacity: 1; }
+  70% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes note {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg) translateY(50px) rotateX(90deg);
+            transform: scale(0.1) rotate(30deg) translateY(50px) rotateX(90deg); }
+  50% {
+    -webkit-transform: rotate(-10deg) rotateX(-2deg);
+            transform: rotate(-10deg) rotateX(-2deg);
+    opacity: 1; }
+  70% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 
 .home-content-wraper {
   margin: 50px auto;
@@ -596,6 +661,11 @@ footer.home {
           justify-content: space-around;
   border-bottom: 1px solid grey;
   width: 400px; }
+  .contributor a, .contributor a:active, .contributor a:visited {
+    color: #4e342e;
+    text-decoration: none; }
+  .contributor a:hover {
+    text-decoration: underline; }
   .contributor .avatar {
     margin: 5px; }
     .contributor .avatar img {
