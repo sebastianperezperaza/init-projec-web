@@ -56,11 +56,16 @@
     width: 220px
     padding: 20px
     box-sizing: border-box
+    box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.3)
     margin-bottom: 10px
     border-radius: 4px
+    transition: all 200ms ease-in-out
     background:
       position: top
       size: cover
+    &:hover
+      transform: scale(1.1)
+      box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.3)
 
     &.gulp
       background-image: url(img/buildsystem.jpg)
@@ -69,12 +74,13 @@
     &.jade
       background-image: url(img/jadebro.jpg)
     &.broesersync
-      background-image: url(img/sasstut.jpg)
+      background-image: url(img/browsersync.jpg)
     &.starterkit
       background-image: url(img/StarterKit.jpg)
 
 
 .contributor
+  background-color: transparentize($grey-400, 0.3)
   position: relative
   margin-top: 10px
   margin-left: auto
